@@ -1,0 +1,24 @@
+[core]
+	excludesfile = /Users/dnlytras/.gitignore_global
+	editor = vim
+[user]
+	name = Dimitrios Lytras
+	email = dnlytras@gmail.com
+[commit]
+	template = /Users/dnlytras/.stCommitMsg
+[github]
+	username = DimitrisNL
+[alias]
+	st = status
+	sts = status -sb
+	df = diff --word-diff
+	unstage = reset HEAD
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	ll = log --pretty=oneline --graph --abbrev-commit
+	lm = log --pretty=format:'* %s (%h)'
+ 	lg = log -p
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+[color "status"]
+  untracked = yellow
