@@ -8,4 +8,6 @@ My pretty basic dotfiles for:
 * VS Code
 * Vim
 
-![Hyper](screens/huh.png)
+![Hyper](assets/huh.png)
+
+_VS Code theme can be located [here](https://github.com/DimitrisNL/nord-wave)_

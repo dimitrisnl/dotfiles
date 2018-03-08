@@ -18,7 +18,7 @@
   "prettier.trailingComma": "es5",
   "sublimeTextKeymap.promptV3Features": true,
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Nord",
+  "workbench.colorTheme": "Nord Wave",
   "workbench.iconTheme": "eq-material-theme-icons",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.feedback.visible": false,
