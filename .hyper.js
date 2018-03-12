@@ -3,7 +3,7 @@ module.exports = {
     updateChannel: 'stable',
     fontSize: 12,
     fontFamily:
-      'Hack, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+      '"Fira Code", Hack, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
     cursorColor: '#8fbcbb',
     cursorShape: 'BEAM',
     cursorBlink: true,
