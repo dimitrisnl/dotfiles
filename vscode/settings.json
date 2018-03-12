@@ -5,7 +5,7 @@
   "editor.fontFamily": "'Fira Code', Hack, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.minimap.enabled": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderControlCharacters": false,
@@ -19,9 +19,12 @@
   "prettier.trailingComma": "es5",
   "sublimeTextKeymap.promptV3Features": true,
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Nord Wave",
   "workbench.iconTheme": "eq-material-theme-icons",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.feedback.visible": false,
-  "terminal.integrated.shell.osx": "/bin/zsh"
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "workbench.colorTheme": "Siemor",
+  "[javascript]": {
+    "editor.formatOnSave": true
+  }
 }
