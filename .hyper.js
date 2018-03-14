@@ -12,10 +12,13 @@ module.exports = {
     borderColor: '#333',
     css: `
       .terms_terms {
-        border-bottom: 3px solid #8fbcbb;
+        border-bottom: 3px solid #A9DDD6;
       }
       `,
-    termCSS: ``,
+    termCSS: `
+      x-screen x-row {
+        font-variant-ligatures: initial;
+      }`,
     showHamburgerMenu: '',
     showWindowControls: '',
     padding: '10px 16px',
@@ -44,7 +47,8 @@ module.exports = {
     copyOnSelect: false,
   },
   plugins: [
-    'nord-hyper',
+    // "nord-hyper",
+    'hyper-siemor',
     'gitrocket',
     'hyper-hide-title',
     'hyper-font-smoothing',
