@@ -4,21 +4,51 @@
 [user]
 	name = Dimitrios Lytras
 	email = dnlytras@gmail.com
-[commit]
-	template = /Users/dnlytras/.stCommitMsg
 [github]
-	username = DimitrisNL
+	username = dimitrisnl
+[commit]
+  template = ~/.gitmessage
 [alias]
-	st = status
-	sts = status -sb
+	s = status
+	st = status -sb
+	cm = commit
+	co = checkout
+	new = checkout -b
+	amend = commit --amend --all
+	unstage = reset HEAD~
 	df = diff --word-diff
-	unstage = reset HEAD
+	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+ 	ld = log -p
 	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	ll = log --pretty=oneline --graph --abbrev-commit
 	lm = log --pretty=format:'* %s (%h)'
- 	lg = log -p
+	p = push
+	pl = push --force-with-lease
+[color]
+	ui = auto
 [color "diff"]
-  meta = yellow bold
-  frag = magenta bold
+	meta = yellow bold
+	commit = green bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = "red bold 52"
+	newNormal = "green bold"
+	newHighlight = "green bold 22"
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
 [color "status"]
-  untracked = yellow
+	added = yellow
+	changed = green
+	untracked = cyan
+untracked = yellow
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
