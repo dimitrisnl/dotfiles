@@ -15,10 +15,6 @@ module.exports = {
         border-bottom: 3px solid #A9DDD6;
       }
       `,
-    termCSS: `
-      x-screen x-row {
-        font-variant-ligatures: initial;
-      }`,
     showHamburgerMenu: '',
     showWindowControls: '',
     padding: '10px 16px',
@@ -47,13 +43,11 @@ module.exports = {
     copyOnSelect: false,
   },
   plugins: [
-    // "nord-hyper",
     'hyper-siemor',
     'gitrocket',
     'hyper-hide-title',
     'hyper-font-smoothing',
     'hypercwd',
-    'hyper-always-on-top',
     'hyper-dark-scrollbar',
   ],
   localPlugins: [],
