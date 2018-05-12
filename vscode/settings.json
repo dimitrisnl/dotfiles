@@ -17,13 +17,24 @@
   "prettier.semi": true,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
-  "sublimeTextKeymap.promptV3Features": true,
   "window.zoomLevel": 0,
   "workbench.iconTheme": "eq-material-theme-icons",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.feedback.visible": false,
   "terminal.integrated.shell.osx": "/bin/zsh",
   "workbench.colorTheme": "Siemor",
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true
+  },
   "[javascript]": {
     "editor.formatOnSave": true
   }
