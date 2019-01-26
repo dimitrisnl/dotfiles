@@ -1,6 +1,6 @@
 export ZSH=/Users/dnlytras/.oh-my-zsh
 
-ZSH_THEME="wezm"
+ZSH_THEME="theunraveler"
 
 export UPDATE_ZSH_DAYS=4
 
@@ -18,3 +18,10 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+# For brew, at least
+export PATH=/usr/local/bin:$PATH
+
+# NVM Stuff
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"
