@@ -1,3 +1,3 @@
 # Dotfiles
 
-I like these stuff.
+I like these.
