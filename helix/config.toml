@@ -1,0 +1,47 @@
+theme = "horizon-dark"
+
+[editor]
+line-number = "relative"
+bufferline = "multiple"
+cursorline = true
+color-modes = true
+auto-save = true
+auto-format = true
+trim-trailing-whitespace = true
+popup-border = "all"
+jump-label-alphabet = "asdflkjwerpio"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+[editor.soft-wrap]
+enable = true
+wrap-at-text-width = true
+
+[editor.indent-guides]
+render = true
+character = "┊"
+skip-levels = 1
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode","file-name", "file-modification-indicator", "spinner"]
+center = []
+right = ["diagnostics", "version-control", "selections", "position"]
+mode.normal = "N"
+mode.insert = "I"
+mode.select = "S"
+diagnostics = ["warning", "error"]
+workspace-diagnostics = ["warning", "error"]
+
+[keys.normal]
+"S-d" = ":buffer-close"
+"S-w" = ":write"
+
+[keys.insert]
+
+[keys.select]

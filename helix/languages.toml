@@ -1,0 +1,50 @@
+[language-server.typos]
+command = "typos-lsp"
+
+[language-server.tailwindcss-ls]
+command = "tailwindcss-language-server"
+args = ["--stdio"]
+
+[[language]]
+name = "javascript"
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+language-servers = [
+    "typescript-language-server",
+    "vscode-eslint-language-server",
+    "tailwindcss-ls",
+    "typos",
+]
+
+[[language]]
+name = "jsx"
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+language-servers = [
+    "typescript-language-server",
+    "vscode-eslint-language-server",
+    "tailwindcss-ls",
+    "typos",
+]
+
+[[language]]
+name = "typescript"
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+language-servers = [
+    "typescript-language-server",
+    "vscode-eslint-language-server",
+    "tailwindcss-ls",
+    "typos",
+]
+
+[[language]]
+name = "tsx"
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+language-servers = [
+    "typescript-language-server",
+    "vscode-eslint-language-server",
+    "tailwindcss-ls",
+    "typos",
+]
+
+[[language]]
+name = "json"
+formatter = { command = "prettier", args = ["--parser", "json"] }

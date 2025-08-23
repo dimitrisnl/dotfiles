@@ -1,13 +1,10 @@
 [core]
-	excludesfile = /Users/dnlytras/.gitignore_global
-	editor = vim
+    editor = hx
 [user]
 	name = Dimitrios Lytras
 	email = dnlytras@gmail.com
 [github]
 	username = dimitrisnl
-[commit]
-  template = ~/.gitmessage
 [alias]
 	s = status
 	st = status -sb
@@ -18,7 +15,7 @@
 	unstage = reset HEAD~
 	df = diff --word-diff
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
- 	ld = log -p
+	ld = log -p
 	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	ll = log --pretty=oneline --graph --abbrev-commit
 	lm = log --pretty=format:'* %s (%h)'
@@ -52,3 +49,7 @@ untracked = yellow
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[init]
+	defaultBranch = master
+[push]
+	autoSetupRemote = true

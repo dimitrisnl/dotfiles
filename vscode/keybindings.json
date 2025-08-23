@@ -1,7 +1,0 @@
-[
-  {
-    "key": "cmd+y",
-    "command": "redo",
-    "when": "editorTextFocus"
-  }
-]
