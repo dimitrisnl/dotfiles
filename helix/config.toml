@@ -40,7 +40,6 @@ workspace-diagnostics = ["warning", "error"]
 
 [keys.normal]
 "S-d" = ":buffer-close"
-"S-w" = ":write"
 
 [keys.insert]
 
