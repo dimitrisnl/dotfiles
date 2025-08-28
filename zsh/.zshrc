@@ -19,3 +19,9 @@ eval "$(mise activate zsh)"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# alias
+alias gg='lazygit'
+
+# opencode
+export PATH=/Users/dnlytras/.opencode/bin:$PATH
