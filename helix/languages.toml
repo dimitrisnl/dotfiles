@@ -5,6 +5,10 @@ command = "typos-lsp"
 command = "tailwindcss-language-server"
 args = ["--stdio"]
 
+[language-server.rubocop]
+command = "bundle"
+args = ["exec", "rubocop", "--lsp"]
+
 [[language]]
 name = "javascript"
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
@@ -48,3 +52,12 @@ language-servers = [
 [[language]]
 name = "json"
 formatter = { command = "prettier", args = ["--parser", "json"] }
+
+[[language]]
+name = "ruby"
+auto-format = true
+language-servers = [
+    "ruby-lsp",
+    "solargraph",
+    "rubocop"
+]
