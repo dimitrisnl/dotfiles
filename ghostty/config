@@ -1,12 +1,11 @@
 font-family = CommitMono
 font-size = 16
 
-theme = tokyonight_night
+theme = tokyonight_moon
 
 adjust-underline-position = 40%
-adjust-cell-height = 10%
+adjust-cell-height = 8%
 
-macos-titlebar-proxy-icon = hidden
 macos-titlebar-style = tabs
 macos-icon = blueprint
 
