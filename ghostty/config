@@ -1,10 +1,7 @@
-font-family = CommitMono
+theme = Lydia
+
+font-family = Lilex
 font-size = 16
-
-theme = tokyonight_moon
-
-adjust-underline-position = 40%
-adjust-cell-height = 8%
 
 macos-titlebar-style = tabs
 macos-icon = blueprint
