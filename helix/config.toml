@@ -2,8 +2,7 @@ theme = "lydia"
 
 [editor]
 line-number = "relative"
-bufferline = "multiple"
-cursorline = true
+cursorline = false
 color-modes = true
 auto-save = true
 auto-format = true
@@ -31,7 +30,7 @@ select = "underline"
 [editor.statusline]
 left = ["mode","file-name", "file-modification-indicator", "spinner"]
 center = []
-right = ["diagnostics", "version-control", "selections", "position"]
+right = ["diagnostics", "version-control", "position"]
 mode.normal = "N"
 mode.insert = "I"
 mode.select = "S"
@@ -40,7 +39,6 @@ workspace-diagnostics = ["warning", "error"]
 
 [keys.normal]
 "S-d" = ":buffer-close"
-
-[keys.insert]
-
-[keys.select]
+"ret" = "goto_word"
+C-j = "half_page_down"
+C-k = "half_page_up"
