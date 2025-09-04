@@ -1,0 +1,219 @@
+# Syntax
+string = "cyan"
+"string.regexp" = "pink"
+"string.special" = "orange"
+"string.special.path" = "cyan"
+"string.special.url" = "blue"
+"string.special.symbol" = "orange"
+constant = "orange"
+"constant.numeric" = "orange"
+"constant.builtin" = "orange"
+"constant.boolean" = "orange"
+"constant.character" = "orange"
+"constant.character.escape" = "gray"
+variable = "white"
+"variable.builtin" = "orange"
+"variable.parameter" = "pink"
+"variable.other.member" = "blue"
+"variable.other.member.private" = "blue"
+attribute = "pink"
+comment = "gray"
+"comment.line" = "gray"
+"comment.line.documentation" = "light-gray"
+"comment.block" = "gray"
+"comment.block.documentation" = "light-gray"
+special = "red"
+punctuation = "muted"
+"punctuation.delimiter" = "muted"
+"punctuation.bracket" = "muted"
+"punctuation.special" = "orange"
+keyword = "purple"
+"keyword.control" = "purple"
+"keyword.control.conditional" = "purple"
+"keyword.control.repeat" = "purple"
+"keyword.control.import" = "purple"
+"keyword.control.return" = "purple"
+"keyword.control.exception" = "purple"
+"keyword.operator" = "pink"
+"keyword.directive" = "white"
+"keyword.function" = "purple"
+"keyword.storage" = "purple"
+"keyword.storage.type" = "purple"
+"keyword.storage.modifier" = "purple"
+operator = "pink"
+function = "blue"
+"function.builtin" = "orange"
+"function.method" = "blue"
+"function.method.private" = "blue"
+"function.macro" = "blue"
+"function.special" = "orange"
+label = "accent"
+type = "blue"
+"type.builtin" = "orange"
+"type.parameter" = "pink"
+"type.enum" = "orange"
+"type.enum.variant" = "accent"
+constructor = "blue"
+namespace = "white"
+tag = "red"
+"tag.builtin" = "red"
+
+# User Interface
+"ui.background" = { fg = "white", bg = "" }
+"ui.background.separator" = "border"
+"ui.cursor" = { modifiers = ["reversed"] }
+"ui.cursor.match" = "match"
+"ui.cursor.primary" = { modifiers = ["reversed"] }
+"ui.cursor.primary.normal" = { modifiers = ["reversed"] }
+"ui.cursor.primary.insert" = { bg = "accent", fg = "bg" }
+"ui.cursor.primary.select" = { modifiers = ["reversed"] }
+"ui.debug.breakpoint" = "error"
+"ui.debug.active" = "warning"
+"ui.gutter" = "gutter"
+"ui.gutter.selected" = "active-line"
+"ui.linenr" = "line-numbers"
+"ui.linenr.selected" = "line-numbers-active"
+"ui.statusline" = { fg = "white", bg = "statusbar" }
+"ui.statusline.inactive" = { fg = "muted", bg = "statusbar" }
+"ui.statusline.normal" = { fg = "white", bg = "statusbar" }
+"ui.statusline.insert" = { fg = "bg", bg = "accent" }
+"ui.statusline.select" = { fg = "bg", bg = "selection-cursor" }
+"ui.statusline.separator" = "border"
+"ui.bufferline" = { fg = "muted", bg = "panel" }
+"ui.bufferline.active" = { fg = "white", bg = "bg" }
+"ui.bufferline.background" = "panel"
+"ui.popup" = { fg = "muted", bg = "panel" }
+"ui.popup.info" = { fg = "white", bg = "panel" }
+"ui.picker.header" = { fg = "accent", bg = "panel" }
+"ui.picker.header.column" = { fg = "muted", bg = "panel" }
+"ui.picker.header.column.active" = { fg = "accent", bg = "panel" }
+"ui.help" = { fg = "accent", bg = "panel" }
+"ui.text" = { fg = "white", bg = "" }
+"ui.text.focus" = { fg = "white", bg = "match" }
+"ui.text.inactive" = "muted"
+"ui.text.info" = "white"
+"ui.text.directory" = "blue"
+"ui.virtual.ruler" = "border"
+"ui.virtual.whitespace" = "invisible"
+"ui.virtual.indent-guide" = "indent-guide"
+"ui.virtual.inlay-hint" = "hint"
+"ui.virtual.inlay-hint.parameter" = "pink"
+"ui.virtual.inlay-hint.type" = "blue"
+"ui.virtual.wrap" = "border"
+"ui.virtual.jump-label" = "red"
+"ui.menu" = { fg = "white", bg = "panel" }
+"ui.menu.selected" = { fg = "white", bg = "selection-visible" }
+"ui.menu.scroll" = { fg = "scrollbar-thumb", bg = "scrollbar-track" }
+"ui.selection" = { bg = "selection-visible" }
+"ui.selection.primary" = { bg = "selection-visible" }
+"ui.highlight" = { bg = "highlight" }
+"ui.highlight.frameline" = { bg = "active-line" }
+"ui.cursorline.primary" = { bg = "active-line" }
+"ui.cursorline.secondary" = { bg = "active-line" }
+"ui.cursorcolumn.primary" = { bg = "active-line" }
+"ui.cursorcolumn.secondary" = { bg = "active-line" }
+"ui.window" = { fg = "bg", bg = "bg" }
+
+# Diagnostics
+"diagnostic" = "muted"
+"diagnostic.hint" = {underline = {color = "hint", style = "curl" } }
+"diagnostic.info" = {underline = {color = "info", style = "curl" } }
+"diagnostic.warning" = {underline = {color = "warning", style = "curl" } }
+"diagnostic.error" = {underline = {color = "error", style = "curl" } }
+"diagnostic.unnecessary" = {underline = {color = "muted", style = "curl" } }
+"diagnostic.deprecated" = { fg = "muted", modifiers = ["crossed_out"] }
+warning = "warning"
+error = "error"
+info = "info"
+hint = "hint"
+
+# Markup
+"markup" = "white"
+"markup.heading" = { fg = "heading", modifiers = ["bold"] }
+"markup.heading.marker" = "muted"
+"markup.heading.1" = { fg = "heading1", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "heading2", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "heading3", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "heading4", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "heading5", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "heading6", modifiers = ["bold"] }
+"markup.list" = "white"
+"markup.list.unnumbered" = "white"
+"markup.list.numbered" = "white"
+"markup.bold" = { fg = "white", modifiers = ["bold"] }
+"markup.italic" = { fg = "white", modifiers = ["italic"] }
+"markup.strikethrough" = { fg = "white", modifiers = ["crossed_out"] }
+"markup.link" = "link"
+"markup.link.url" = "blue"
+"markup.link.label" = "link"
+"markup.link.text" = "link"
+"markup.quote" = "gray"
+"markup.raw" = "cyan"
+"markup.raw.inline" = "cyan"
+"markup.raw.block" = "cyan"
+
+# Diff
+"diff.plus" = "added"
+"diff.plus.gutter" = "added"
+"diff.minus" = "deleted"
+"diff.minus.gutter" = "deleted"
+"diff.delta" = "modified"
+"diff.delta.moved" = "renamed"
+
+[palette]
+# Base colors
+dark = "#1b1e24"
+bg = "#1b1e2e"
+bg-blue = "#24283b"
+white = "#a9b1d6"
+muted = "#8089b3"
+accent = "#7aa2f7"
+
+# UI colors
+panel = "#1f2335"
+statusbar = "#1f2335"
+gutter = "#24283b"
+active-line = "#292e42"
+border = "#1b1e2e"
+indent-guide = "#2d324a"
+invisible = "#3b4261"
+selection-visible = "#3b4261"
+selection-cursor = "#7aa2f7"
+match = "#3d59a166"
+highlight = "#3b4261"
+scrollbar-thumb = "#9cacff22"
+scrollbar-track = "#00000000"
+line-numbers = "#3b4261"
+line-numbers-active = "#8089b3"
+
+# Syntax colors
+gray = "#5F6996"
+light-gray = "#6F7BB0"
+cyan = "#6eb4bf"
+orange = "#F0AC8B"
+purple = "#ca9ee6"
+pink = "#d3b1c8"
+blue = "#8caaee"
+red = "#F0879A"
+link = "#8caaee"
+
+# Diagnostic colors
+error = "#bb616b"
+warning = "#c49a5a"
+info = "#0da0ba"
+hint = "#0da0ba"
+
+# Git colors
+added = "#449dab"
+deleted = "#914c54"
+modified = "#6183bb"
+renamed = "#0da0ba"
+
+# Heading colors
+heading = "#C0CAF5"
+heading1 = "#89DDFF"
+heading2 = "#61BDF2"
+heading3 = "#7AA2F7"
+heading4 = "#6D91DE"
+heading5 = "#9AA5CE"
+heading6 = "#747CA1"
