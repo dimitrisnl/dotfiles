@@ -1,3 +1,8 @@
-# Dotfiles
+Here are my configuration files for 
 
-I like these.
+- Ghostty
+- Helix
+- Git
+- Zsh
+
+I've also included a custom theme for Ghostty and Helix.
