@@ -1,7 +1,9 @@
 theme = Lydia
 
-font-family = Lilex
+font-family = JetBrains Mono
 font-size = 16
+
+adjust-cell-height = 5%
 
 macos-titlebar-style = tabs
 macos-icon = blueprint
