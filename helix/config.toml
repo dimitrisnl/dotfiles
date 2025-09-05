@@ -28,7 +28,7 @@ normal = "block"
 select = "underline"
 
 [editor.statusline]
-left = ["mode","file-name", "file-modification-indicator", "spinner"]
+left = ["mode", "file-base-name", "file-modification-indicator", "spinner"]
 center = []
 right = ["diagnostics", "version-control", "position"]
 mode.normal = "N"
@@ -42,3 +42,6 @@ workspace-diagnostics = ["warning", "error"]
 "ret" = "goto_word"
 C-j = "half_page_down"
 C-k = "half_page_up"
+
+[keys.normal.space]
+"=" = ":format"
