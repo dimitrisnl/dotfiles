@@ -1,8 +1,3 @@
-Here are my configuration files for 
-
-- Ghostty
-- Helix
-- Git
-- Zsh
+Here are my configurations for my development environment. Updated constantly. 
 
 I've also included a custom theme for Ghostty and Helix.
