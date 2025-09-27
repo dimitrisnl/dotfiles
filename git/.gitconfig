@@ -1,5 +1,6 @@
 [core]
-    editor = hx
+	excludesfile = /Users/dnlytras/.gitignore_global
+	editor = hx
 [user]
 	name = Dimitrios Lytras
 	email = dnlytras@gmail.com
@@ -7,48 +8,19 @@
 	username = dimitrisnl
 [alias]
 	s = status
-	st = status -sb
-	cm = commit
+	cm = commit -m
 	co = checkout
 	new = checkout -b
 	amend = commit --amend --all
 	unstage = reset HEAD~
-	df = diff --word-diff
-	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
-	ld = log -p
+
+	d = -c diff.external=difft diff
+    ld = -c diff.external=difft log -p --ext-diff
 	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	ll = log --pretty=oneline --graph --abbrev-commit
-	lm = log --pretty=format:'* %s (%h)'
+
 	p = push
 	pl = push --force-with-lease
-[color]
-	ui = auto
-[color "diff"]
-	meta = yellow bold
-	commit = green bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = "red bold 52"
-	newNormal = "green bold"
-	newHighlight = "green bold 22"
-[color "branch"]
-	current = yellow reverse
-	local = yellow
-	remote = green
-[color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
-untracked = yellow
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+
 [init]
 	defaultBranch = master
 [push]
