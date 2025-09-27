@@ -1,0 +1,40 @@
+{
+  "theme": "Lydia",
+  "icon_theme": "Soft Charmed Icons",
+  "helix_mode": true,
+  "ui_font_size": 15.0,
+  "ui_font_family": "JetBrains Mono",
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 16.0,
+  "double_click_in_multibuffer": "open",
+  "soft_wrap": "bounded",
+  "lsp_document_colors": "inlay",
+  "git_panel": {
+    "dock": "bottom"
+  },
+  "terminal": {
+    "dock": "right",
+    "font_size": 15,
+    "font_family": "JetBrains Mono"
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "project_panel": {
+    "hide_root": true,
+    "indent_size": 12,
+    "sticky_scroll": false,
+    "indent_guides": {
+      "show": "never"
+    }
+  },
+  "languages": {
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true
+      }
+    }
+  }
+}
