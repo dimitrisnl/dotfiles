@@ -1,7 +1,8 @@
 {
   "theme": "Lydia",
   "icon_theme": "Soft Charmed Icons",
-  "helix_mode": true,
+  "helix_mode": false,
+  "disable_ai": true,
   "ui_font_size": 15.0,
   "ui_font_family": "JetBrains Mono",
   "buffer_font_family": "JetBrains Mono",
@@ -9,10 +10,19 @@
   "double_click_in_multibuffer": "open",
   "soft_wrap": "bounded",
   "lsp_document_colors": "inlay",
+  "show_wrap_guides": false,
+  "gutter": {
+    "breakpoints": false,
+    "min_line_number_digits": 3,
+    "runnables": false,
+    "folds": true
+  },
   "git_panel": {
+    "button": false,
     "dock": "bottom"
   },
   "terminal": {
+    "button": false,
     "dock": "right",
     "font_size": 15,
     "font_family": "JetBrains Mono"
@@ -22,13 +32,52 @@
       "enabled": false
     }
   },
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "title_bar": {
+    "show_branch_icon": true
+  },
+  "status_bar": {
+    "active_language_button": false,
+    "cursor_position_button": false
+  },
+  "debugger": {
+    "button": false
+  },
+  "notification_panel": {
+    "button": false
+  },
+  "outline_panel": {
+    "button": false
+  },
+  "diagnostics": {
+    "button": false
+  },
+  "search": {
+    "button": false
+  },
   "project_panel": {
+    "button": false,
     "hide_root": true,
     "indent_size": 12,
     "sticky_scroll": false,
     "indent_guides": {
       "show": "never"
     }
+  },
+  "global_lsp_settings": {
+    "button": false
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "code_actions": false,
+    "selections_menu": false,
+    "quick_actions": false
   },
   "languages": {
     "JavaScript": {
