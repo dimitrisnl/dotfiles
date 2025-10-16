@@ -1,8 +1,24 @@
 {
+  "tabs": {
+    "file_icons": true,
+    "git_status": false
+  },
+  "completions": {
+    "lsp": true
+  },
+  "enable_language_server": true,
+  "inlay_hints": {
+    "enabled": false
+  },
+  "indent_guides": {
+    "background_coloring": "disabled",
+    "coloring": "fixed",
+    "enabled": true
+  },
+  "current_line_highlight": "gutter",
   "theme": "Lydia",
   "icon_theme": "Soft Charmed Icons",
   "helix_mode": false,
-  "disable_ai": true,
   "ui_font_size": 15.0,
   "ui_font_family": "JetBrains Mono",
   "buffer_font_family": "JetBrains Mono",
@@ -12,6 +28,7 @@
   "lsp_document_colors": "inlay",
   "show_wrap_guides": false,
   "gutter": {
+    "line_numbers": true,
     "breakpoints": false,
     "min_line_number_digits": 3,
     "runnables": false,
@@ -23,7 +40,7 @@
   },
   "terminal": {
     "button": false,
-    "dock": "right",
+    "dock": "bottom",
     "font_size": 15,
     "font_family": "JetBrains Mono"
   },
@@ -40,10 +57,15 @@
     "button": false
   },
   "title_bar": {
+    "show_menus": false,
+    "show_sign_in": true,
+    "show_user_picture": true,
+    "show_onboarding_banner": true,
+    "show_project_items": true,
     "show_branch_icon": true
   },
   "status_bar": {
-    "active_language_button": false,
+    "active_language_button": true,
     "cursor_position_button": false
   },
   "debugger": {
@@ -62,6 +84,7 @@
     "button": false
   },
   "project_panel": {
+    "entry_spacing": "comfortable",
     "button": false,
     "hide_root": true,
     "indent_size": 12,
@@ -74,16 +97,20 @@
     "button": false
   },
   "toolbar": {
+    "agent_review": true,
     "breadcrumbs": false,
     "code_actions": false,
     "selections_menu": false,
     "quick_actions": false
   },
+  "agent": {
+    "button": false,
+    "dock": "right",
+    "model_parameters": []
+  },
   "languages": {
     "JavaScript": {
-      "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      }
+      "formatter": ["auto", { "code_action": "source.fixAll.eslint" }]
     }
   }
 }
