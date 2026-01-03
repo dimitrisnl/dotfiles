@@ -1,42 +1,47 @@
-export ZSH="$HOME/.oh-my-zsh"
+# History configuration
+HISTFILE=~/.zsh_history
+HISTSIZE=50000
+SAVEHIST=50000
+setopt EXTENDED_HISTORY          # Write timestamps to history
+setopt HIST_EXPIRE_DUPS_FIRST    # Expire duplicates first
+setopt HIST_IGNORE_DUPS          # Don't record duplicates
+setopt HIST_IGNORE_SPACE         # Don't record commands starting with space
+setopt HIST_VERIFY               # Show command with history expansion before running
+setopt SHARE_HISTORY             # Share history between sessions
 
-# zsh options
-COMPLETION_WAITING_DOTS="true"
-HIST_STAMPS="yyyy-mm-dd"
+# Enable completion system
+autoload -Uz compinit
+compinit
 
-# plugins (none, the faster the better)
-plugins=()
+# Completion options
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # Case insensitive completion
+setopt COMPLETE_IN_WORD          # Complete from both ends of word
+setopt ALWAYS_TO_END             # Move cursor to end after completion
 
-source $ZSH/oh-my-zsh.sh
+# Robbyrussell prompt (manual implementation)
+autoload -Uz vcs_info
+precmd() { vcs_info }
+setopt PROMPT_SUBST
 
-# === CUSTOM PROMPT ===
-PROMPT='d%{$fg[cyan]%}::%{$reset_color%}%{$fg[blue]%}%c%{$reset_color%} % '
-RPROMPT='%{$fg[magenta]%}$(git_prompt_info)%{$reset_color%}$(git_prompt_status)%{$reset_color%}'
+zstyle ':vcs_info:git:*' formats ' %b%c%u'
+zstyle ':vcs_info:git:*' actionformats ' %b|%a%c%u'
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' unstagedstr ' ✗'
+zstyle ':vcs_info:*' stagedstr ' +'
 
-# Git prompt styling
-ZSH_THEME_GIT_PROMPT_PREFIX="("
-ZSH_THEME_GIT_PROMPT_SUFFIX=")"
-ZSH_THEME_GIT_PROMPT_DIRTY=""
-ZSH_THEME_GIT_PROMPT_CLEAN=""
-ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[green]%} A"
-ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[cyan]%} M"
-ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%} D"
-ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[blue]%} R"
-ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[magenta]%} UM"
-ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[yellow]%} UT"
+PROMPT='%F{cyan}%~%f%F{yellow}${vcs_info_msg_0_}%f %(?:%F{green}➜ :%F{red}➜ )%f'
 
-# === TOOL INTEGRATIONS ===
-# mise (version manager)
-eval "$(mise activate zsh)"
-
-# bun (JavaScript runtime)
+# Bun (JavaScript runtime)
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# opencode
-export PATH="$HOME/.opencode/bin:$PATH"
+# Integrations
+eval "$(mise activate zsh)"
+eval "$(zoxide init zsh)"
 
-# === ALIASES ===
+# Aliases
 alias gg='lazygit'
 alias npm-deps='npx npm-check-updates -i'
+alias cd='z'
