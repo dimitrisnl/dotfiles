@@ -42,6 +42,15 @@ workspace-diagnostics = ["warning", "error"]
 "ret" = "goto_word"
 C-j = "half_page_down"
 C-k = "half_page_up"
+C-y = [
+  ':sh rm -f /tmp/unique-file',
+  ':sh rm -f /tmp/unique-cwd-file',
+  ":insert-output yazi --chooser-file=/tmp/unique-file --cwd-file=/tmp/unique-cwd-file",
+  ':sh printf "\\x1b[?1049h\\x1b[?2004h" > /dev/tty',
+  ':open %sh{cat /tmp/unique-file}',
+  ':cd %sh{cat /tmp/unique-cwd-file}',
+  ':redraw',
+]
 
 [keys.normal.space]
 "=" = ":format"
