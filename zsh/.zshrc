@@ -30,7 +30,7 @@ zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr ' ✗'
 zstyle ':vcs_info:*' stagedstr ' +'
 
-PROMPT='%F{cyan}%~%f%F{yellow}${vcs_info_msg_0_}%f %(?:%F{green}➜ :%F{red}➜ )%f'
+PROMPT='%F{cyan}%c%f%F{yellow}${vcs_info_msg_0_}%f %(?:%F{green}➜ :%F{red}➜ )%f'
 
 # Bun (JavaScript runtime)
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
