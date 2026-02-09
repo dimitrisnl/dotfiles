@@ -21,7 +21,6 @@ return {
         c.fg_dark = "#8089b3"
         c.fg_gutter = "#3b4261"
         c.fg_sidebar = "#8089b3"
-
         -- Syntax
         c.blue = "#8caaee"
         c.blue0 = "#3d59a1"
@@ -39,7 +38,6 @@ return {
         c.red1 = "#bb616b"
         c.teal = "#0da0ba"
         c.yellow = "#e5c890"
-
         -- Git
         c.git = {
           add = "#449dab",
@@ -51,16 +49,13 @@ return {
           change = "#6183bb",
           delete = "#914c54",
         }
-
         -- Diagnostics
         c.error = "#bb616b"
         c.warning = "#c49a5a"
         c.info = "#0da0ba"
         c.hint = "#0da0ba"
-
         -- Terminal
         c.terminal_black = "#414868"
-
         -- Comment
         c.comment = "#5F6996"
         c.dark3 = "#545c7e"
@@ -95,7 +90,6 @@ return {
         hl.Exception = { fg = "#ca9ee6" }
         hl.Macro = { fg = "#8caaee" }
         hl.Todo = { fg = "#e5c890", bold = true }
-
         -- Treesitter
         hl["@variable"] = { fg = "#C0CAF5" }
         hl["@variable.builtin"] = { fg = "#F0AC8B" }
@@ -156,7 +150,6 @@ return {
         hl["@markup.link.url"] = { fg = "#6eb4bf", underline = true }
         hl["@markup.raw"] = { fg = "#6eb4bf" }
         hl["@markup.quote"] = { fg = "#5F6996" }
-
         -- LSP semantic tokens
         hl["@lsp.type.parameter"] = { fg = "#d3b1c8" }
         hl["@lsp.type.property"] = { fg = "#8caaee" }
@@ -172,21 +165,21 @@ return {
         hl["@lsp.type.method"] = { fg = "#8caaee" }
         hl["@lsp.type.macro"] = { fg = "#8caaee" }
         hl["@lsp.type.decorator"] = { fg = "#d3b1c8" }
-
         -- UI - line numbers
         hl.LineNr = { fg = "#3b4261" }
         hl.CursorLineNr = { fg = "#8089b3" }
-
         -- UI - selection/search
         hl.Visual = { bg = "#3b4261" }
         hl.Search = { fg = "#a9b1d6", bg = "#3d59a1" }
         hl.IncSearch = { fg = "#24283b", bg = "#7aa2f7" }
         hl.CurSearch = { fg = "#24283b", bg = "#7aa2f7" }
-
+        -- Flash (leap/sneak labels)
+        hl.FlashLabel = { fg = "#1a1b26", bg = "#ca9ee6", bold = true }
+        hl.FlashMatch = { fg = "#a9b1d6", bg = "#3b4261" }
+        hl.FlashCurrent = { fg = "#a9b1d6", bg = "#3d59a1" }
         -- UI - indent guides
         hl.IblIndent = { fg = "#2d324a" }
         hl.IblScope = { fg = "#8089b3" }
-
         -- Diagnostics
         hl.DiagnosticError = { fg = "#bb616b" }
         hl.DiagnosticWarn = { fg = "#c49a5a" }
