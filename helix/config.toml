@@ -8,7 +8,7 @@ auto-save = true
 auto-format = true
 trim-trailing-whitespace = true
 popup-border = "all"
-jump-label-alphabet = "asdflkjwerpio"
+# jump-label-alphabet = "asdflkjwerpio"
 
 [editor.inline-diagnostics]
 cursor-line = "warning"
@@ -38,11 +38,12 @@ diagnostics = ["warning", "error"]
 workspace-diagnostics = ["warning", "error"]
 
 [keys.normal]
+"X" = "extend_line_up"
 "S-d" = ":buffer-close"
 "ret" = "goto_word"
-C-j = "half_page_down"
-C-k = "half_page_up"
-C-y = [
+"}" = ["goto_next_paragraph", "collapse_selection"]
+"{" = ["goto_prev_paragraph", "collapse_selection"]
+"C-y" = [
   ':sh rm -f /tmp/unique-file',
   ':sh rm -f /tmp/unique-cwd-file',
   ":insert-output yazi --chooser-file=/tmp/unique-file --cwd-file=/tmp/unique-cwd-file",
@@ -51,6 +52,10 @@ C-y = [
   ':cd %sh{cat /tmp/unique-cwd-file}',
   ':redraw',
 ]
+
+[keys.select]
+"}" = "goto_next_paragraph"
+"{" = "goto_prev_paragraph"
 
 [keys.normal.space]
 "=" = ":format"
