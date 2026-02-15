@@ -2,6 +2,7 @@ theme = Lydia
 
 font-family = CommitMono
 font-size = 16
+font-feature = 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on, 'ss05' on
 
 adjust-cell-height = 25%
 background-opacity = 0.95
