@@ -1,11 +1,15 @@
 theme = Lydia
 
-font-family = JetBrains Mono
+font-family = CommitMono
 font-size = 16
 
-adjust-cell-height = 5%
+adjust-cell-height = 25%
+background-opacity = 0.95
+
 
 macos-titlebar-style = tabs
 macos-icon = blueprint
+macos-window-buttons = hidden
+
 
 title = " "
