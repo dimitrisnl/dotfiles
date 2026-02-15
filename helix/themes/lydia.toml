@@ -59,7 +59,7 @@ tag = "red"
 "tag.builtin" = "red"
 
 # User Interface
-"ui.background" = { fg = "white", bg = "" }
+"ui.background" = { fg = "white", bg = "1b1e2e90" }
 "ui.background.separator" = "border"
 "ui.cursor" = { modifiers = ["reversed"] }
 "ui.cursor.match" = "match"
@@ -100,7 +100,7 @@ tag = "red"
 "ui.virtual.inlay-hint.parameter" = "pink"
 "ui.virtual.inlay-hint.type" = "blue"
 "ui.virtual.wrap" = "border"
-"ui.virtual.jump-label" = "red"
+"ui.virtual.jump-label" = "yellow"
 "ui.menu" = { fg = "white", bg = "panel" }
 "ui.menu.selected" = { fg = "white", bg = "selection-visible" }
 "ui.menu.scroll" = { fg = "scrollbar-thumb", bg = "scrollbar-track" }
@@ -196,6 +196,8 @@ pink = "#d3b1c8"
 blue = "#8caaee"
 red = "#F0879A"
 link = "#8caaee"
+green = "#a6d189"
+yellow = "#e5c890"
 
 # Diagnostic colors
 error = "#bb616b"
