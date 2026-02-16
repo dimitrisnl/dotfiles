@@ -11,6 +11,6 @@ background-opacity = 0.95
 macos-titlebar-style = tabs
 macos-icon = blueprint
 macos-window-buttons = hidden
-
+macos-option-as-alt = left
 
 title = " "
