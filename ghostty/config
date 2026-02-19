@@ -1,12 +1,10 @@
 theme = Lydia
 
-font-family = CommitMono
+font-family = Fira Code Retina
 font-size = 16
-font-feature = 'ss01' on, 'ss02' on, 'ss03' on, 'ss04' on, 'ss05' on
 
-adjust-cell-height = 25%
+adjust-cell-height = 5%
 background-opacity = 0.95
-
 
 macos-titlebar-style = tabs
 macos-icon = blueprint
