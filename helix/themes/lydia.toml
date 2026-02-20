@@ -59,7 +59,7 @@ tag = "red"
 "tag.builtin" = "red"
 
 # User Interface
-"ui.background" = { fg = "white", bg = "1b1e2e90" }
+"ui.background" = { fg = "white", bg = "" }
 "ui.background.separator" = "border"
 "ui.cursor" = { modifiers = ["reversed"] }
 "ui.cursor.match" = "match"
@@ -73,7 +73,7 @@ tag = "red"
 "ui.gutter.selected" = "active-line"
 "ui.linenr" = "line-numbers"
 "ui.linenr.selected" = "line-numbers-active"
-"ui.statusline" = { fg = "white", bg = "statusbar" }
+"ui.statusline" = { fg = "white", bg = "" }
 "ui.statusline.inactive" = { fg = "muted", bg = "statusbar" }
 "ui.statusline.normal" = { fg = "white", bg = "statusbar" }
 "ui.statusline.insert" = { fg = "bg", bg = "accent" }
@@ -100,7 +100,7 @@ tag = "red"
 "ui.virtual.inlay-hint.parameter" = "pink"
 "ui.virtual.inlay-hint.type" = "blue"
 "ui.virtual.wrap" = "border"
-"ui.virtual.jump-label" = "yellow"
+"ui.virtual.jump-label" = { modifiers = ["reversed"] }
 "ui.menu" = { fg = "white", bg = "panel" }
 "ui.menu.selected" = { fg = "white", bg = "selection-visible" }
 "ui.menu.scroll" = { fg = "scrollbar-thumb", bg = "scrollbar-track" }
