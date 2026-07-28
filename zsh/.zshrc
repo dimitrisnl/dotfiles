@@ -38,6 +38,9 @@ zstyle ':vcs_info:*' stagedstr ' +'
 
 PROMPT='%F{cyan}%~%f%F{yellow}${vcs_info_msg_0_}%f %(?:%F{green}➜ :%F{red}➜ )%f'
 
+# Prefer PostgreSQL 16 CLI over older linked versions.
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+
 # Integrations
 eval "$(mise activate zsh)"
 eval "$(zoxide init zsh --cmd cd)"
