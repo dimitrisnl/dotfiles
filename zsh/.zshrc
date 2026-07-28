@@ -11,7 +11,13 @@ setopt SHARE_HISTORY             # Share history between sessions
 
 # Enable completion system
 autoload -Uz compinit
-compinit
+# Rebuild completion metadata only when the cache is missing or stale.
+_compdump="${XDG_CACHE_HOME:-$HOME/.cache}/.zcompdump"
+if [[ -n "$_compdump"(#qN.mh+24) ]]; then
+  compinit -d "$_compdump"
+else
+  compinit -C -d "$_compdump"
+fi
 
 # Completion options
 zstyle ':completion:*' menu select
@@ -30,12 +36,7 @@ zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr ' ✗'
 zstyle ':vcs_info:*' stagedstr ' +'
 
-PROMPT='%F{cyan}%c%f%F{yellow}${vcs_info_msg_0_}%f %(?:%F{green}➜ :%F{red}➜ )%f'
-
-# Bun (JavaScript runtime)
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+PROMPT='%F{cyan}%~%f%F{yellow}${vcs_info_msg_0_}%f %(?:%F{green}➜ :%F{red}➜ )%f'
 
 # Integrations
 eval "$(mise activate zsh)"
