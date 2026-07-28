@@ -39,9 +39,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Integrations
 eval "$(mise activate zsh)"
-eval "$(zoxide init zsh)"
+eval "$(zoxide init zsh --cmd cd)"
 
 # Aliases
 alias gg='lazygit'
 alias npm-deps='npx npm-check-updates -i'
-alias cd='z'
