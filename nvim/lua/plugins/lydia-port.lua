@@ -182,6 +182,11 @@ return {
         hl.Search = { fg = "#a9b1d6", bg = "#3d59a1" }
         hl.IncSearch = { fg = "#24283b", bg = "#7aa2f7" }
         hl.CurSearch = { fg = "#24283b", bg = "#7aa2f7" }
+ 
+        -- Flash (leap/sneak labels)
+        hl.FlashLabel = { fg = "#1a1b26", bg = "#ca9ee6", bold = true }
+        hl.FlashMatch = { fg = "#a9b1d6", bg = "#3b4261" }
+        hl.FlashCurrent = { fg = "#a9b1d6", bg = "#3d59a1" }
 
         -- UI - indent guides
         hl.IblIndent = { fg = "#2d324a" }
