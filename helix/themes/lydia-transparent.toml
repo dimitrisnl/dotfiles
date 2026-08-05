@@ -59,7 +59,7 @@ tag = "red"
 "tag.builtin" = "red"
 
 # User Interface
-"ui.background" = { fg = "white", bg = "bg" }
+"ui.background" = { fg = "white", bg = "" }
 "ui.background.separator" = "border"
 "ui.cursor" = { modifiers = ["reversed"] }
 "ui.cursor.match" = "match"
@@ -73,7 +73,7 @@ tag = "red"
 "ui.gutter.selected" = "active-line"
 "ui.linenr" = "line-numbers"
 "ui.linenr.selected" = "line-numbers-active"
-"ui.statusline" = { fg = "white", bg = "panel" }
+"ui.statusline" = { fg = "white", bg = "" }
 "ui.statusline.inactive" = { fg = "muted", bg = "statusbar" }
 "ui.statusline.normal" = { fg = "white", bg = "statusbar" }
 "ui.statusline.insert" = { fg = "bg", bg = "accent" }
@@ -88,7 +88,7 @@ tag = "red"
 "ui.picker.header.column" = { fg = "muted", bg = "panel" }
 "ui.picker.header.column.active" = { fg = "accent", bg = "panel" }
 "ui.help" = { fg = "accent", bg = "panel" }
-"ui.text" = { fg = "white", bg = "bg" }
+"ui.text" = { fg = "white", bg = "" }
 "ui.text.focus" = { fg = "white", bg = "match" }
 "ui.text.inactive" = "muted"
 "ui.text.info" = "white"
@@ -112,7 +112,7 @@ tag = "red"
 "ui.cursorline.secondary" = { bg = "active-line" }
 "ui.cursorcolumn.primary" = { bg = "active-line" }
 "ui.cursorcolumn.secondary" = { bg = "active-line" }
-"ui.window" = { fg = "bg-blue", bg = "bg" }
+"ui.window" = { fg = "bg", bg = "bg" }
 
 # Diagnostics
 "diagnostic" = "muted"
