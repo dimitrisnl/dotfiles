@@ -1,4 +1,4 @@
-theme = "lydia"
+theme = "lydia-transparent"
 
 [editor]
 line-number = "relative"
@@ -8,7 +8,7 @@ auto-save = true
 auto-format = true
 trim-trailing-whitespace = true
 popup-border = "all"
-# jump-label-alphabet = "asdflkjwerpio"
+jump-label-alphabet = "asdflkjwerpio"
 
 [editor.inline-diagnostics]
 cursor-line = "warning"
