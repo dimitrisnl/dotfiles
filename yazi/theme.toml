@@ -1,0 +1,127 @@
+# Lydia theme for Yazi, adapted from ~/.config/helix/themes/lydia.toml.
+
+[app]
+overall = { bg = "#1b1e2e" }
+
+[mgr]
+cwd = { fg = "#7aa2f7", bold = true }
+hovered = { fg = "#c0caf5", bg = "#3d59a1", bold = true, reversed = true }
+find_keyword = { fg = "#1b1e2e", bg = "#e5c890", bold = true }
+find_position = { fg = "#d3b1c8", bold = true }
+symlink_target = { fg = "#6eb4bf" }
+marker_copied = { fg = "#449dab", bg = "#1b1e2e", bold = true }
+marker_cut = { fg = "#bb616b", bg = "#1b1e2e", bold = true }
+marker_marked = { fg = "#e5c890", bg = "#1b1e2e", bold = true }
+marker_selected = { fg = "#7aa2f7", bg = "#1b1e2e", bold = true }
+count_copied = { fg = "#1b1e2e", bg = "#449dab", bold = true }
+count_cut = { fg = "#1b1e2e", bg = "#bb616b", bold = true }
+count_selected = { fg = "#1b1e2e", bg = "#7aa2f7", bold = true }
+border_symbol = "|"
+border_style = { fg = "#24283b" }
+
+[indicator]
+parent = { fg = "#24283b", bg = "#1b1e2e" }
+current = { fg = "#c0caf5", bg = "#3d59a1", bold = true }
+preview = { fg = "#24283b", bg = "#1b1e2e" }
+padding = { open = " ", close = " " }
+
+[tabs]
+active = { fg = "#1b1e2e", bg = "#7aa2f7", bold = true }
+inactive = { fg = "#8089b3", bg = "#1f2335" }
+sep_inner = { open = "", close = "" }
+sep_outer = { open = "", close = "" }
+
+[mode]
+normal_main = { fg = "#1b1e2e", bg = "#7aa2f7", bold = true }
+normal_alt = { fg = "#7aa2f7", bg = "#1f2335" }
+select_main = { fg = "#1b1e2e", bg = "#d3b1c8", bold = true }
+select_alt = { fg = "#d3b1c8", bg = "#1f2335" }
+unset_main = { fg = "#1b1e2e", bg = "#8089b3", bold = true }
+unset_alt = { fg = "#8089b3", bg = "#1f2335" }
+
+[status]
+overall = { fg = "#a9b1d6", bg = "#1f2335" }
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+perm_type = { fg = "#8caaee" }
+perm_read = { fg = "#a6d189" }
+perm_write = { fg = "#e5c890" }
+perm_exec = { fg = "#f0ac8b" }
+perm_sep = { fg = "#5f6996" }
+progress_label = { fg = "#a9b1d6", bold = true }
+progress_normal = { fg = "#7aa2f7", bg = "#3b4261" }
+progress_error = { fg = "#f0879a", bg = "#3b4261" }
+
+[which]
+border = { fg = "#24283b" }
+cols = 3
+mask = { bg = "#1b1e2e" }
+cand = { fg = "#ca9ee6", bold = true }
+rest = { fg = "#8089b3" }
+desc = { fg = "#a9b1d6" }
+separator = " -> "
+separator_style = { fg = "#5f6996" }
+
+[confirm]
+border = { fg = "#24283b" }
+title = { fg = "#7aa2f7", bold = true }
+body = { fg = "#a9b1d6" }
+list = { fg = "#8089b3" }
+btn_yes = { fg = "#1b1e2e", bg = "#bb616b", bold = true }
+btn_no = { fg = "#1b1e2e", bg = "#7aa2f7", bold = true }
+btn_labels = ["yes", "no"]
+
+[spot]
+border = { fg = "#24283b" }
+title = { fg = "#7aa2f7", bold = true }
+tbl_col = { fg = "#1b1e2e", bg = "#7aa2f7" }
+tbl_cell = { fg = "#a9b1d6", bg = "#292e42" }
+
+[notify]
+title_info = { fg = "#0da0ba", bold = true }
+title_warn = { fg = "#c49a5a", bold = true }
+title_error = { fg = "#bb616b", bold = true }
+
+[pick]
+border = { fg = "#24283b" }
+active = { fg = "#1b1e2e", bg = "#7aa2f7", bold = true }
+inactive = { fg = "#8089b3" }
+
+[input]
+border = { fg = "#24283b" }
+title = { fg = "#7aa2f7", bold = true }
+value = { fg = "#a9b1d6" }
+selected = { fg = "#1b1e2e", bg = "#7aa2f7" }
+
+[cmp]
+border = { fg = "#24283b" }
+active = { fg = "#1b1e2e", bg = "#7aa2f7", bold = true }
+inactive = { fg = "#8089b3" }
+icon_file = "f"
+icon_folder = "d"
+icon_command = ">"
+
+[tasks]
+border = { fg = "#24283b" }
+title = { fg = "#7aa2f7", bold = true }
+hovered = { fg = "#1b1e2e", bg = "#7aa2f7", bold = true }
+
+[help]
+border = { fg = "#24283b" }
+chord = { fg = "#ca9ee6", bold = true }
+action = { fg = "#a9b1d6" }
+hovered = { fg = "#1b1e2e", bg = "#7aa2f7", bold = true }
+
+[filetype]
+rules = [
+  { mime = "inode/empty", fg = "#5f6996" },
+  { mime = "text/*", fg = "#a9b1d6" },
+  { mime = "image/*", fg = "#e5c890" },
+  { mime = "{audio,video}/*", fg = "#d3b1c8" },
+  { mime = "application/{zip,gzip,x-tar,x-bzip,x-bzip2,x-7z-compressed,x-rar}", fg = "#f0ac8b" },
+  { url = "*", is = "exec", fg = "#a6d189" },
+  { url = "*", is = "link", fg = "#6eb4bf" },
+  { url = "*", is = "orphan", fg = "#f0879a", crossed = true },
+  { url = "*/", fg = "#8caaee", bold = true },
+  { url = "*", fg = "#a9b1d6" },
+]
