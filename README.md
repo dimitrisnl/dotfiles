@@ -1,3 +1,3 @@
-Here are my configurations for my development environment. Updated constantly. 
+Here are my configurations for my development environment. Updated constantly.
 
-I've also included a custom theme for Ghostty and Helix.
+I've also included custom themes for Ghostty, Helix, Yazi, and Zed.
