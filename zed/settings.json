@@ -1,116 +1,126 @@
 {
-  "tabs": {
-    "file_icons": true,
-    "git_status": false
+  // Non-AI editor
+  "disable_ai": true,
+
+  // Privacy: disable usage metrics and crash reporting
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
   },
-  "completions": {
-    "lsp": true
-  },
-  "enable_language_server": true,
-  "inlay_hints": {
-    "enabled": false
-  },
-  "indent_guides": {
-    "background_coloring": "disabled",
-    "coloring": "fixed",
-    "enabled": true
-  },
-  "current_line_highlight": "gutter",
-  "theme": "Lydia",
-  "icon_theme": "Soft Charmed Icons",
-  "helix_mode": false,
+
+  // Appearance
+  "theme": "Lydia Darker",
+  "icon_theme": "Flow Deep",
   "ui_font_size": 15.0,
   "ui_font_family": "JetBrains Mono",
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_size": 16.0,
+
+  // Editor behavior
+  "vim_mode": true,
   "double_click_in_multibuffer": "open",
   "soft_wrap": "bounded",
-  "lsp_document_colors": "inlay",
   "show_wrap_guides": false,
+  "scroll_beyond_last_line": "off",
+  "hover_popover_delay": 700,
+  "seed_search_query_from_cursor": "selection",
+  "drag_and_drop_selection": {
+    "enabled": false,
+  },
+  "preview_tabs": {
+    "enabled": false,
+  },
+
+  // Editor chrome
   "gutter": {
-    "line_numbers": true,
+    "bookmarks": false,
     "breakpoints": false,
-    "min_line_number_digits": 3,
     "runnables": false,
-    "folds": true
-  },
-  "git_panel": {
-    "button": false,
-    "dock": "bottom"
-  },
-  "terminal": {
-    "button": false,
-    "dock": "bottom",
-    "font_size": 15,
-    "font_family": "JetBrains Mono"
-  },
-  "git": {
-    "inline_blame": {
-      "enabled": false
-    }
+    "folds": false,
+    "min_line_number_digits": 3,
   },
   "tab_bar": {
     "show_nav_history_buttons": false,
-    "show_tab_bar_buttons": false
-  },
-  "collaboration_panel": {
-    "button": false
-  },
-  "title_bar": {
-    "show_menus": false,
-    "show_sign_in": true,
-    "show_user_picture": true,
-    "show_onboarding_banner": true,
-    "show_project_items": true,
-    "show_branch_icon": true
-  },
-  "status_bar": {
-    "active_language_button": true,
-    "cursor_position_button": false
-  },
-  "debugger": {
-    "button": false
-  },
-  "notification_panel": {
-    "button": false
-  },
-  "outline_panel": {
-    "button": false
-  },
-  "diagnostics": {
-    "button": false
-  },
-  "search": {
-    "button": false
-  },
-  "project_panel": {
-    "entry_spacing": "comfortable",
-    "button": false,
-    "hide_root": true,
-    "indent_size": 12,
-    "sticky_scroll": false,
-    "indent_guides": {
-      "show": "never"
-    }
-  },
-  "global_lsp_settings": {
-    "button": false
+    "show_tab_bar_buttons": false,
   },
   "toolbar": {
-    "agent_review": true,
     "breadcrumbs": false,
-    "code_actions": false,
     "selections_menu": false,
-    "quick_actions": false
+    "quick_actions": false,
   },
-  "agent": {
+
+  // Project tree and panels (hidden buttons do not disable the panels)
+  "project_panel": {
+    "dock": "left",
     "button": false,
-    "dock": "right",
-    "model_parameters": []
+    "entry_spacing": "standard",
+    "hide_root": true,
+    "indent_size": 12,
+    "drag_and_drop": false,
+    "sticky_scroll": false,
+    "indent_guides": {
+      "show": "never",
+    },
   },
+  "outline_panel": {
+    "dock": "left",
+    "button": false,
+  },
+  "collaboration_panel": {
+    "dock": "left",
+    "button": false,
+  },
+  "git_panel": {
+    "button": false,
+  },
+  "terminal": {
+    "button": false,
+    "font_size": 15,
+  },
+  "debugger": {
+    "button": false,
+  },
+
+  // Status bar
+  "diagnostics": {
+    "button": false,
+  },
+  "search": {
+    "button": false,
+  },
+  "global_lsp_settings": {
+    "button": false,
+  },
+
+  // Git
+  "git": {
+    "inline_blame": {
+      "enabled": false,
+    },
+  },
+
+  // Language tooling: ESLint fixes first, then Prettier formatting on save
   "languages": {
     "JavaScript": {
-      "formatter": ["auto", { "code_action": "source.fixAll.eslint" }]
-    }
-  }
+      "format_on_save": "on",
+      "formatter": [
+        { "code_action": "source.fixAll.eslint" },
+        "prettier",
+      ],
+    },
+    "TypeScript": {
+      "format_on_save": "on",
+      "formatter": [
+        { "code_action": "source.fixAll.eslint" },
+        "prettier",
+      ],
+    },
+    "TSX": {
+      "format_on_save": "on",
+      "formatter": [
+        { "code_action": "source.fixAll.eslint" },
+        "prettier",
+      ],
+    },
+  },
 }
