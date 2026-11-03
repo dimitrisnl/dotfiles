@@ -1,46 +1,56 @@
 tap "anomalyco/tap"
-brew "difftastic"
+
+# Terminal, editors, and fonts
+brew "helix"
+brew "neovim"
+cask "font-jetbrains-mono"
+cask "ghostty"
+cask "zed"
+
+# Shell, search, and file navigation
 brew "fd"
 brew "fzf"
-brew "gh"
-brew "harper"
-brew "helix"
-brew "lazydocker"
-brew "lazygit"
-brew "mise"
-brew "neovim"
-brew "postgresql@16"
-brew "prettier"
 brew "ripgrep"
+brew "yazi"
+brew "zoxide"
+
+# Git and code review
+brew "difftastic"
+brew "gh"
+brew "lazygit"
+
+# Formatting and language servers
+brew "harper"
+brew "prettier"
 brew "solargraph"
 brew "tailwindcss-language-server"
 brew "typescript-language-server"
 brew "typos-lsp"
 brew "vscode-langservers-extracted"
-brew "yazi"
-brew "zoxide"
+
+# Runtimes and coding agents
 brew "anomalyco/tap/opencode"
+brew "mise"
+
+# Containers and databases
+brew "lazydocker"
+brew "postgresql@16"
+cask "dbngin"
+cask "orbstack"
+
+# Desktop utilities, security, and networking
 cask "1password"
 cask "betterdisplay"
 cask "bettertouchtool"
-cask "brave-browser"
-cask "dbngin"
-cask "firefox"
-cask "font-jetbrains-mono"
-cask "ghostty"
 cask "mac-mouse-fix"
 cask "opensuperwhisper"
-cask "orbstack"
 cask "raycast"
-cask "slack"
 cask "tailscale-app"
-cask "zed"
-cask "zoom"
 
-# Personal / leisure apps
-cask "calibre"
-cask "focusrite-control-2"
-cask "guitar-pro"
-cask "losslesscut"
-cask "obs"
-cask "spotify"
+# Browsers
+cask "brave-browser"
+cask "firefox"
+
+# Communication
+cask "slack"
+cask "zoom"

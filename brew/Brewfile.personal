@@ -1,0 +1,13 @@
+# Personal / leisure apps; install alongside the shared Brewfile.
+
+# Reading
+cask "calibre"
+
+# Music and audio
+cask "focusrite-control-2"
+cask "guitar-pro"
+cask "spotify"
+
+# Video editing and recording
+cask "losslesscut"
+cask "obs"
