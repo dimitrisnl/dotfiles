@@ -15,7 +15,7 @@ cursor-line = "warning"
 
 [editor.soft-wrap]
 enable = true
-wrap-at-text-width = true
+wrap-at-text-width = false
 
 [editor.indent-guides]
 render = true
@@ -39,23 +39,19 @@ workspace-diagnostics = ["warning", "error"]
 
 [keys.normal]
 "X" = "extend_line_up"
-"S-d" = ":buffer-close"
 "ret" = "goto_word"
 "}" = ["goto_next_paragraph", "collapse_selection"]
 "{" = ["goto_prev_paragraph", "collapse_selection"]
-"C-y" = [
-  ':sh rm -f /tmp/unique-file',
-  ':sh rm -f /tmp/unique-cwd-file',
-  ":insert-output yazi --chooser-file=/tmp/unique-file --cwd-file=/tmp/unique-cwd-file",
-  ':sh printf "\\x1b[?1049h\\x1b[?2004h" > /dev/tty',
-  ':open %sh{cat /tmp/unique-file}',
-  ':cd %sh{cat /tmp/unique-cwd-file}',
-  ':redraw',
-]
+# Use a scratch buffer so cancellation never edits the current document.
+# Register z is reserved for the helper's safely quoted open/cd macro.
+"C-y" = '''@:new<ret>:insert-output sh "${XDG_CONFIG_HOME:-$HOME/.config}/helix/yazi-picker.sh" 2<gt>/dev/tty || printf ":redraw<lt>ret<gt>"<ret>%"zy:buffer-close!<ret>"zq'''
 
 [keys.select]
 "}" = "goto_next_paragraph"
 "{" = "goto_prev_paragraph"
 
-[keys.normal.space]
-"=" = ":format"
+[keys.normal."]"]
+"]" = "goto_next_buffer"
+
+[keys.normal."["]
+"[" = "goto_previous_buffer"

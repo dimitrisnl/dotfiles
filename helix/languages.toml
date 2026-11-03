@@ -11,7 +11,7 @@ args = ["exec", "rubocop", "--lsp"]
 
 [[language]]
 name = "javascript"
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = "prettier", args = ["--stdin-filepath", "%{buffer_name}"] }
 language-servers = [
     "typescript-language-server",
     "vscode-eslint-language-server",
@@ -21,7 +21,7 @@ language-servers = [
 
 [[language]]
 name = "jsx"
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = "prettier", args = ["--stdin-filepath", "%{buffer_name}"] }
 language-servers = [
     "typescript-language-server",
     "vscode-eslint-language-server",
@@ -31,7 +31,7 @@ language-servers = [
 
 [[language]]
 name = "typescript"
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = "prettier", args = ["--stdin-filepath", "%{buffer_name}"] }
 language-servers = [
     "typescript-language-server",
     "vscode-eslint-language-server",
@@ -41,7 +41,7 @@ language-servers = [
 
 [[language]]
 name = "tsx"
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
+formatter = { command = "prettier", args = ["--stdin-filepath", "%{buffer_name}"] }
 language-servers = [
     "typescript-language-server",
     "vscode-eslint-language-server",
@@ -51,13 +51,9 @@ language-servers = [
 
 [[language]]
 name = "json"
-formatter = { command = "prettier", args = ["--parser", "json"] }
+formatter = { command = "prettier", args = ["--stdin-filepath", "%{buffer_name}"] }
 
 [[language]]
 name = "ruby"
 auto-format = true
-language-servers = [
-    "ruby-lsp",
-    "solargraph",
-    "rubocop"
-]
+language-servers = ["solargraph", "rubocop"]

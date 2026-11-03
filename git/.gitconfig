@@ -1,18 +1,14 @@
 [core]
-	excludesfile = /Users/dnlytras/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	editor = hx
 [user]
 	name = Dimitrios Lytras
-	email = dnlytras@gmail.com
+	email = hi@dnlytras.com
 [github]
 	username = dimitrisnl
 [alias]
 	s = status
-	cm = commit -m
-	co = checkout
 	new = checkout -b
-	amend = commit --amend --all
-	unstage = reset HEAD~
 
 	d = -c diff.external=difft diff
     ld = -c diff.external=difft log -p --ext-diff
