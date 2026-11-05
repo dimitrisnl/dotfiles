@@ -17,7 +17,11 @@
   "buffer_font_size": 16.0,
 
   // Editor behavior
-  "vim_mode": true,
+  "helix_mode": true,
+  "which_key": {
+    "enabled": true,
+    "delay_ms": 0,
+  },
   "double_click_in_multibuffer": "open",
   "soft_wrap": "bounded",
   "show_wrap_guides": false,
