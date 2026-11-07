@@ -3,3 +3,4 @@
 -- Add any additional options here
 
 -- Options are set here
+vim.opt.wrap = true

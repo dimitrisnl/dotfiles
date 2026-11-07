@@ -18,6 +18,7 @@ brew "zoxide"
 brew "difftastic"
 brew "gh"
 brew "lazygit"
+brew "worktrunk"
 
 # Formatting and language servers
 brew "harper"
